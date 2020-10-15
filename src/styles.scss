@@ -1,0 +1,42 @@
+@font-face {
+  font-family: monsterRat;
+  src: url('https://res.cloudinary.com/dsvdhggfk/raw/upload/v1590003266/Montserrat-Thin_e0zazd.ttf');
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+.heading {
+  text-align: center;
+  font-family: monsterRat;
+  font-weight: 600;
+}
+
+.examples {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .page {
+    font-family: monsterRat;
+    padding: 1rem;
+    text-decoration: none;
+    color: #000000;
+    border-right: 1px solid black;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
