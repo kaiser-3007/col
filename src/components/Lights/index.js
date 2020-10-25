@@ -44,4 +44,21 @@ const RimLight = ({ brightness, color }) => {
   )
 }
 
-export { KeyLight, FillLight, RimLight };
+const AmbientLight = ({ brightness, color }) => {
+  return (
+    <ambientLight
+      intensity={brightness}
+      color={color} />
+  )
+}
+
+const PointLight = ({ brightness, color, position }) => {
+  return (
+    <pointLight 
+      intensity={brightness}
+      position={position}
+      color={color} />
+  )
+}
+
+export { KeyLight, FillLight, RimLight, AmbientLight, PointLight };
